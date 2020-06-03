@@ -1,9 +1,6 @@
 [![Build Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
-[![Greenkeeper badge][gk-img]][gk-url]
 [![NPM][npm-img]][npm-url]
-<!-- requires URL update [![Windows Build Status][ci-win-img]][ci-win-url] -->
-<!-- doesn't work in haraka plugins... yet. [![Code Coverage][cov-img]][cov-url]-->
 
 # haraka-plugin-template
 
@@ -82,11 +79,7 @@ $EDITOR config/template.ini
 [ci-url]: https://travis-ci.org/haraka/haraka-plugin-template
 [ci-win-img]: https://ci.appveyor.com/api/projects/status/CHANGETHIS?svg=true
 [ci-win-url]: https://ci.appveyor.com/project/haraka/haraka-CHANGETHIS
-[cov-img]: https://codecov.io/github/haraka/haraka-plugin-template/coverage.svg
-[cov-url]: https://codecov.io/github/haraka/haraka-plugin-template
 [clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-template/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-template
-[gk-img]: https://badges.greenkeeper.io/haraka/haraka-plugin-template.svg
-[gk-url]: https://greenkeeper.io/
 [npm-img]: https://nodei.co/npm/haraka-plugin-template.png
 [npm-url]: https://www.npmjs.com/package/haraka-plugin-template
