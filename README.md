@@ -14,7 +14,7 @@ See also, [How to Write a Plugin](https://github.com/haraka/Haraka/wiki/Write-a-
 
 ## Create a new repo for your plugin
 
-Haraka plugins are named like `haraka-plugin-something`. All the namespace after `haraka-plugin-` is yours for the taking. Please check the [Plugins]() page and a Google search to see what plugins already exist.
+Haraka plugins are named like `haraka-plugin-something`. All the namespace after `haraka-plugin-` is yours for the taking. Please check the [Plugins](https://github.com/haraka/Haraka/blob/master/Plugins.md) page and a Google search to see what plugins already exist.
 
 Once you've settled on a name, create the GitHub repo. On the repo's main page, click the _Clone or download_ button and copy the URL. Then paste that URL into a local ENV variable with a command like this:
 
@@ -42,13 +42,6 @@ Replaces all uses of the word `template` with your plugin's name.
 ./redress.sh [something]
 
 You'll then be prompted to update package.json and then force push this repo onto the GitHub repo you've created earlier.
-
-
-## Enable Travis-CI testing
-
-- [ ] visit your [Travis-CI profile page](https://travis-ci.org/profile) and enable Continuous Integration testing on the repo
-- [ ] enable Code Climate. Click the _code climate_ badge and import your repo.
-
 
 
 # Add your content here

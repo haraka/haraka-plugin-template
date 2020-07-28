@@ -17,7 +17,7 @@ sed -i '' \
     -e "s/_template/_${1}/g" \
     -e "s/template\.ini/$1.ini/" \
     index.js
-    
+
 git mv config/template.ini "config/$1.ini"
 git add package.json README.md index.js test config
 git commit -m "renamed template to $1"
