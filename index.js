@@ -2,6 +2,9 @@
 
 exports.register = function () {
   this.load_template_ini()
+
+  // register hooks here. More info at https://haraka.github.io/core/Plugins/
+  // this.register_hook('data_post', 'do_stuff_with_message')
 }
 
 exports.load_template_ini = function () {
