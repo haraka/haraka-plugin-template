@@ -1,5 +1,4 @@
-[![Unix Build Status][ci-img]][ci-url]
-[![Windows Build Status][ci-win-img]][ci-win-url]
+[![CI Test Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
 [![NPM][npm-img]][npm-url]
 
@@ -69,10 +68,8 @@ $EDITOR config/template.ini
 
 
 <!-- leave these buried at the bottom of the document -->
-[ci-img]: https://github.com/haraka/haraka-plugin-template/workflows/Plugin%20Tests/badge.svg
-[ci-url]: https://github.com/haraka/haraka-plugin-template/actions?query=workflow%3A%22Plugin+Tests%22
-[ci-win-img]: https://github.com/haraka/haraka-plugin-template/workflows/Plugin%20Tests%20-%20Windows/badge.svg
-[ci-win-url]: https://github.com/haraka/haraka-plugin-template/actions?query=workflow%3A%22Plugin+Tests+-+Windows%22
+[ci-img]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-template/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-template
 [npm-img]: https://nodei.co/npm/haraka-plugin-template.png
