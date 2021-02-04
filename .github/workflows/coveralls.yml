@@ -1,11 +1,11 @@
-on: [ pull_request ]
+# on: [ pull_request ]
 
 name: Test Coverage
 
 jobs:
 
   coverage:
-    name: Codecov
+
     runs-on: ubuntu-latest
 
     steps:
@@ -20,8 +20,7 @@ jobs:
         npm install
         npm install --no-save nyc codecov
 
-    - name: Run Coverage Tests
-      run: npm run cover
+    - run: npm run cover
 
     - name: Submit to Coveralls
       uses: coverallsapp/github-action@master
