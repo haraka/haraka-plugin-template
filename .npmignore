@@ -57,3 +57,5 @@ codecov.yml
 .travis.yml
 .eslintrc.yaml
 .eslintrc.json
+.nyc_output
+coverage
