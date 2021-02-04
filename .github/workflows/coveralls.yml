@@ -1,6 +1,6 @@
-on: [ not-a-haraka-plugin ]
-
 name: Test Coverage
+
+on: [ push ]
 
 jobs:
 
@@ -20,9 +20,10 @@ jobs:
         npm install
         npm install --no-save nyc codecov
 
-    - run: npm run cover
+    - run: NODE_ENV=cov npx nyc --reporter=lcovonly npm test
 
     - name: Submit to Coveralls
+      if: success()
       uses: coverallsapp/github-action@master
       with:
         github-token: ${{ secrets.github_token }}
