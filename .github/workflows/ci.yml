@@ -10,8 +10,8 @@ jobs:
   lint:
     uses: haraka/.github/.github/workflows/lint.yml@master
 
-  coverage:
-    uses: haraka/.github/.github/workflows/coverage.yml@master
+  # coverage:
+  #   uses: haraka/.github/.github/workflows/coverage.yml@master
 
   test:
     needs: lint
