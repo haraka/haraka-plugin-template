@@ -1,6 +1,6 @@
 {
   "name": "haraka-plugin-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Haraka plugin that frobnicates email connections",
   "main": "index.js",
   "scripts": {
