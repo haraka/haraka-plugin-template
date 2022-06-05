@@ -3,6 +3,7 @@
 ### 1.0.2 - 2022-05-23
 
 - packaging updates
+- ci: replace hard coded node versions with node-lts-versions
 
 
 ### 1.0.1 - 2021-02-04
