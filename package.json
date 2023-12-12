@@ -1,6 +1,6 @@
 {
   "name": "haraka-plugin-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Haraka plugin that...CHANGE THIS",
   "main": "index.js",
   "scripts": {
@@ -25,9 +25,9 @@
   },
   "homepage": "https://github.com/haraka/haraka-plugin-template#readme",
   "devDependencies": {
-    "eslint": "8.55.0",
+    "eslint": "^8.55.0",
     "eslint-plugin-haraka": "*",
     "haraka-test-fixtures": "*",
-    "mocha": "10.2.0"
+    "mocha": "^10.2.0"
   }
 }

@@ -2,6 +2,13 @@
 ### Unreleased
 
 
+### 1.0.5 - 2023-12-12
+
+- ci: run tests on PR
+- ci(publish): add on.release trigger
+- deps(dev*): pin versions
+
+
 ### [1.0.3] - 2022-06-05
 
 - ci: replace hard coded vers with node-lts-versions
@@ -27,5 +34,6 @@
 ### 1.0.0 - 2017-02-02
 
 - initial release
+
 
 [1.0.3]: https://github.com/haraka/haraka-plugin-template/releases/tag/1.0.3
