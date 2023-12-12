@@ -42,11 +42,12 @@ bower_components
 .npmrc
 
 .idea
+.DS_Store
 haraka-update.sh
+
 .github
 .release
 .codeclimate.yml
-.DS_Store
 .editorconfig
 .gitignore
 .gitmodules
