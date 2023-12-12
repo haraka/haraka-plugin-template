@@ -40,6 +40,7 @@ package-lock.json
 bower_components
 # Optional npm cache directory
 .npmrc
+
 .idea
 .DS_Store
 haraka-update.sh
