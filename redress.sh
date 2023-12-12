@@ -5,14 +5,19 @@ if [ -z "$1" ]; then
   exit
 fi
 
-sed -i '' -e "s/template/${1}/g" README.md
+sed -i '' \
+    -e "s/template/${1}/g" \
+    README.md
 
 sed -i '' \
     -e "s/template/${1}/g" \
     -e "s/template\.ini/$1.ini/" \
     test/index.js
 
-sed -i '' -e "s/template/${1}/g" package.json
+sed -i '' \
+    -e "s/template/${1}/g" \
+    package.json
+
 sed -i '' \
     -e "s/_template/_${1}/g" \
     -e "s/template\.ini/$1.ini/" \
