@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.0.6] - 2024-04-08
 
+- dep: eslint-plugin-haraka -> @haraka/eslint-config
 - populate [files] in package.json. Delete .npmignore.
 
 ### 1.0.5 - 2023-12-12
