@@ -6,5 +6,5 @@ engines:
       config: ".eslintrc.yaml"
 
 ratings:
-   paths:
-   - "**.js"
+  paths:
+    - "**.js"

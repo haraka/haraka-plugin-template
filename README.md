@@ -44,7 +44,6 @@ Replaces all uses of the word `template` with your plugin's name.
 
 You'll then be prompted to update package.json and then force push this repo onto the GitHub repo you've created earlier.
 
-
 # Add your content here
 
 ## INSTALL
@@ -67,8 +66,8 @@ $EDITOR config/template.ini
 
 ## USAGE
 
-
 <!-- leave these buried at the bottom of the document -->
+
 [ci-img]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-template/badges/gpa.svg
