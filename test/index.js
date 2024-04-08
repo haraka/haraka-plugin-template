@@ -1,52 +1,44 @@
 
-// node.js built-in modules
-const assert   = require('assert')
+const assert   = require('node:assert/strict')
+const { beforeEach, describe, it } = require('node:test')
 
 // npm modules
 const fixtures = require('haraka-test-fixtures')
 
 // start of tests
 //    assert: https://nodejs.org/api/assert.html
-//    mocha: http://mochajs.org
 
-beforeEach(function (done) {
+beforeEach(function () {
   this.plugin = new fixtures.plugin('template')
-  done()  // if a test hangs, assure you called done()
 })
 
 describe('template', function () {
-  it('loads', function (done) {
+  it('loads', function () {
     assert.ok(this.plugin)
-    done()
   })
 })
 
 describe('load_template_ini', function () {
-  it('loads template.ini from config/template.ini', function (done) {
+  it('loads template.ini from config/template.ini', function () {
     this.plugin.load_template_ini()
     assert.ok(this.plugin.cfg)
-    done()
   })
 
-  it('initializes enabled boolean', function (done) {
+  it('initializes enabled boolean', function () {
     this.plugin.load_template_ini()
     assert.equal(this.plugin.cfg.main.enabled, true, this.plugin.cfg)
-    done()
   })
 })
 
 describe('uses text fixtures', function () {
-  it('sets up a connection', function (done) {
+  it('sets up a connection', function () {
     this.connection = fixtures.connection.createConnection({})
     assert.ok(this.connection.server)
-    done()
   })
 
-  it('sets up a transaction', function (done) {
+  it('sets up a transaction', function () {
     this.connection = fixtures.connection.createConnection({})
     this.connection.transaction = fixtures.transaction.createTransaction({})
-    // console.log(this.connection.transaction)
     assert.ok(this.connection.transaction.header)
-    done()
   })
 })
