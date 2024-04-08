@@ -1,6 +1,13 @@
+# Changelog
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/).
+
 
 ### Unreleased
 
+### [1.0.6] - 2024-04-08
+
+- populate [files] in package.json. Delete .npmignore.
 
 ### 1.0.5 - 2023-12-12
 
@@ -16,7 +23,7 @@
 - ci: use reusable workflows (#18)
 
 
-### 1.0.2 - 2022-05-23
+### [1.0.2] - 2022-05-23
 
 - ci: replace hard coded node vers with node-lts-versions
 - ci(publish): add secrets: inherit
@@ -24,7 +31,7 @@
 - packaging updates
 
 
-### 1.0.1 - 2021-02-04
+### [1.0.1] - 2021-02-04
 
 - test: added example tests that set up conn/txn
 - ci: add automated package publishing
@@ -36,4 +43,7 @@
 - initial release
 
 
+[1.0.1]: https://github.com/haraka/haraka-plugin-template/releases/tag/1.0.1
+[1.0.2]: https://github.com/haraka/haraka-plugin-template/releases/tag/1.0.2
 [1.0.3]: https://github.com/haraka/haraka-plugin-template/releases/tag/1.0.3
+[1.0.6]: https://github.com/haraka/haraka-plugin-template/releases/tag/v1.0.6
