@@ -23,7 +23,7 @@ sed -i '' \
     -e "s/template\.ini/$1.ini/" \
     index.js
 
-tee Changes.md <<EO_CHANGE
+tee CHANGELOG.md <<EO_CHANGE
 ## 1.0.0 - $(date +%Y-%m-%d)
 
 - Initial release
