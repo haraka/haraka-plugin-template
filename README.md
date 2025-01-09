@@ -1,8 +1,6 @@
 [![CI Test Status][ci-img]][ci-url]
 [![Code Climate][clim-img]][clim-url]
 
-[![NPM][npm-img]][npm-url]
-
 # haraka-plugin-template
 
 Clone me, to create a new Haraka plugin!
@@ -69,5 +67,3 @@ $EDITOR config/template.ini
 [ci-url]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml
 [clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-template/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-template
-[npm-img]: https://nodei.co/npm/haraka-plugin-template.png
-[npm-url]: https://www.npmjs.com/package/haraka-plugin-template
