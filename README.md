@@ -25,7 +25,7 @@ export MY_PLUGIN_NAME=haraka-plugin-SOMETHING
 Clone and rename the template repo:
 
 ```sh
-git clone git@github.com:haraka/$MY_PLUGIN_NAME.git
+git clone git@github.com:haraka/$MY_GITHUB_ORG/$MY_PLUGIN_NAME.git
 cd $MY_PLUGIN_NAME
 ```
 
