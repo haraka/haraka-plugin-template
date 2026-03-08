@@ -3,7 +3,6 @@ const { beforeEach, describe, it } = require('node:test')
 
 // npm modules
 const fixtures = require('haraka-test-fixtures')
-const plugin_module = require('../index.js')
 
 // start of tests
 //    assert: https://nodejs.org/api/assert.html
@@ -58,7 +57,7 @@ describe('load_template_ini', () => {
 })
 
 describe('uses text fixtures', () => {
-  it('sets up a this.connection', () => {
+  it('sets up a connection', () => {
     this.connection = fixtures.connection.createConnection({})
     assert.ok(this.connection.server)
   })
