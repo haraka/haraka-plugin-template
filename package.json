@@ -17,7 +17,7 @@
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write --log-level=warn",
     "test": "node --test",
-    "test:coverage": "npx c8 npm test",
+    "test:coverage": "HARAKA_COVERAGE=1 npx c8 npm test",
     "versions": "npx dependency-version-checker check",
     "versions:fix": "npx dependency-version-checker update"
   },
