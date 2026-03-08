@@ -11,7 +11,11 @@ const plugin_module = require('../index.js')
 beforeEach(() => {
   this.plugin = new fixtures.plugin('template')
   
-  Object.assign(this.plugin, plugin_module)
+  // Conditionally inject for coverage tracking
+  if (process.env.HARAKA_COVERAGE) {
+    const plugin_module = require('../index.js')
+    Object.assign(this.plugin, plugin_module)
+  }
 })
 
 describe('register', () => {
