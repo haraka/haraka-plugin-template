@@ -10,7 +10,7 @@ const fixtures = require('haraka-test-fixtures')
 beforeEach(() => {
   this.plugin = new fixtures.plugin('template')
   
-  // Conditionally inject for coverage tracking
+  // replace vm-compiled fns with instrumented copies for coverage tracking
   if (process.env.HARAKA_COVERAGE) {
     const plugin_module = require('../index.js')
     Object.assign(this.plugin, plugin_module)
