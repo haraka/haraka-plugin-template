@@ -1,12 +1,15 @@
 {
   "name": "haraka-plugin-template",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Haraka plugin that...CHANGE THIS",
   "main": "index.js",
   "files": [
     "CHANGELOG.md",
     "config"
   ],
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "format": "npm run prettier:fix && npm run lint:fix",
     "lint": "npx eslint *.js test",
@@ -14,6 +17,7 @@
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write --log-level=warn",
     "test": "node --test",
+    "test:coverage": "HARAKA_COVERAGE=1 npx c8 npm test",
     "versions": "npx dependency-version-checker check",
     "versions:fix": "npx dependency-version-checker update"
   },

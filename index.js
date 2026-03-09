@@ -18,6 +18,8 @@ exports.load_template_ini = function () {
       ],
     },
     () => {
+      // This closure is run a few seconds after template.ini changes
+      // Re-run the outer function again
       this.load_template_ini()
     },
   )
