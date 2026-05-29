@@ -1,7 +1,6 @@
-[![CI Test Status][ci-img]][ci-url]
-[![Code Climate][clim-img]][clim-url]
-
 # haraka-plugin-template
+
+[![Test][ci-img]][ci-url] [![Cover][cov-img]][cov-url] [![Qlty][qlty-img]][qlty-url]
 
 Clone me, to create a new Haraka plugin!
 
@@ -65,5 +64,7 @@ $EDITOR config/template.ini
 
 [ci-img]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/haraka-plugin-template/actions/workflows/ci.yml
-[clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-template/badges/gpa.svg
-[clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-template
+[cov-img]: https://codecov.io/github/haraka/haraka-plugin-template/coverage.svg
+[cov-url]: https://codecov.io/github/haraka/haraka-plugin-template
+[qlty-img]: https://qlty.sh/gh/haraka/projects/haraka-plugin-template/maintainability.svg
+[qlty-url]: https://qlty.sh/gh/haraka/projects/haraka-plugin-template
