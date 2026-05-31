@@ -6,8 +6,6 @@ const { beforeEach, describe, it } = require('node:test')
 const { makeConnection, makePlugin } = require('haraka-test-fixtures')
 
 beforeEach(() => {
-  this.plugin = new fixtures.plugin('template')
-
   this.plugin = makePlugin('template', { register: false })
 })
 
