@@ -1,20 +1,12 @@
+// assert: https://nodejs.org/api/assert.html
 const assert = require('node:assert/strict')
 const { beforeEach, describe, it } = require('node:test')
 
 // npm modules
-const fixtures = require('haraka-test-fixtures')
-
-// start of tests
-//    assert: https://nodejs.org/api/assert.html
+const { makeConnection, makePlugin } = require('haraka-test-fixtures')
 
 beforeEach(() => {
-  this.plugin = new fixtures.plugin('template')
-  
-  // replace vm-compiled fns with instrumented copies for coverage tracking
-  if (process.env.HARAKA_COVERAGE) {
-    const plugin_module = require('../index.js')
-    Object.assign(this.plugin, plugin_module)
-  }
+  this.plugin = makePlugin('template', { register: false })
 })
 
 describe('register', () => {
@@ -29,13 +21,20 @@ describe('register', () => {
         enabled: true,
       },
       feature_section: {
-        yes: true
-      }
+        yes: true,
+      },
     }
 
     assert.deepEqual(this.plugin.cfg, undefined)
     this.plugin.register()
     assert.deepEqual(this.plugin.cfg, expected_cfg)
+  })
+
+  it('register() loads config via load_template_ini', () => {
+    this.plugin.register()
+    assert.equal(this.plugin.cfg.main.enabled, true)
+    assert.equal(this.plugin.cfg.main.disabled, false)
+    assert.equal(this.plugin.cfg.feature_section.yes, true)
   })
 })
 
@@ -58,13 +57,12 @@ describe('load_template_ini', () => {
 
 describe('uses text fixtures', () => {
   it('sets up a connection', () => {
-    this.connection = fixtures.connection.createConnection({})
+    this.connection = makeConnection()
     assert.ok(this.connection.server)
   })
 
   it('sets up a transaction', () => {
-    this.connection = fixtures.connection.createConnection({})
-    this.connection.init_transaction()
+    this.connection = makeConnection({ withTxn: true })
     assert.ok(this.connection.transaction.header)
   })
 })
